@@ -20,3 +20,7 @@ Kelime seslendirmesi tarayıcının konuşma desteğine bağlıdır. Ses efektle
 ## Kontrol
 
 `npm test`
+
+## 3D LEGO görünümü
+
+Yerel Three.js modülleriyle gerçek WebGL sahnesi: referans araca göre yeşil/turuncu 4×4, vinç, tavan kutusu, minifigür, dişli lastikler; LEGO taban, ağaçlar, dağlar, engeller ve açılan hazine sandığı. Dönen tekerlekler, sahne giriş sürüşü, taş kaldırma, köprü ve lav geçişi animasyonları vardır. Sahne yatay sürüklenerek döndürülebilir. WebGL desteği gerekir. Three.js lisansı `vendor/LICENSE` içindedir.
