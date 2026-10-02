@@ -13,9 +13,9 @@ Vercel gibi statik hosting servislerinde Framework: Other, çıktı dizini: `.`;
 2. İngilizce → Türkçe: yazılı cevap, 5 can.
 3. Türkçe → İngilizce: yazılı cevap, 7 can.
 
-Her oyun, “1. Tema Kelime Listesi.pdf” içindeki 45 kelime/ifadenin tamamını karışık sırayla sorar. 10 taş, 10 lav geçiş taşı, 10 köprü parçası, 8 lastik onarım adımı, 7 yakıt adımı tamamlanınca hazine kazanılır. Yanlış cevap bir can azaltır; doğru cevap gösterilir ve aynı kelimeyi çözmeden ilerlenmez. Türkçe karakter farkları, alternatif Türkçe anlamlar, İngilizcede a/an kullanım farkı ve tire/boşluk farkı kabul edilir.
+Her oyun, “1. Tema Kelime Listesi.pdf” içindeki 45 kelime/ifadenin tamamını karışık sırayla sorar. 10 taş, 10 lav geçiş taşı, 10 köprü parçası, 8 lastik onarım adımı, 7 yakıt adımı tamamlanınca maceracı arabadan iner ve mağaraya yürür. Ekran karardıktan sonra mağara için üç oyun modu yeniden seçilir. Mağarada araç yoktur; meşale, kaplan, yılan, örümcek ve taş engellerinin her biri 9 soru sürer. Aynı 45 kelime yeni sırayla yeniden sorulur. Canlar seçilen moda göre 5/5/7 olarak yenilenir. Hazine yalnızca mağaradaki 45 soru da bitince, toplam 90 sorunun ardından kazanılır. Yanlış cevap bir can azaltır; doğru cevap gösterilir ve aynı kelimeyi çözmeden ilerlenmez. Türkçe karakter farkları, alternatif Türkçe anlamlar, İngilizcede a/an kullanım farkı ve tire/boşluk farkı kabul edilir.
 
-Kelime seslendirmesi tarayıcının konuşma desteğine bağlıdır. Ses efektleri isteğe bağlıdır. Oyun verileri sunucuya gönderilmez. Menüye dönmek mevcut macerayı sıfırlar.
+Kelime seslendirmesi tarayıcının konuşma desteğine bağlıdır. Ses efektleri isteğe bağlıdır. Oyun verileri sunucuya gönderilmez. Menüye dönmek mevcut macerayı sıfırlar. Mağarada canlar bitince Yeniden Dene seçeneği mağaranın başından devam eder.
 
 ## Kontrol
 
