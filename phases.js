@@ -6,7 +6,7 @@ export const roadStages=[
 {key:'fuel',count:7,title:'Benzin bitti, mağara çok yakın!',task:'Her doğru cevapla depoya yakıt ekle.',name:'MAĞARAYA SON DURAK'}];
 export const caveStages=[
 {key:'torch',count:9,title:'Meşalen söndü, etraf karanlık!',task:'Kelimeleri çöz, meşaleyi yeniden yak ve yolu aydınlat.',name:'SÖNEN MEŞALE'},
-{key:'tiger',count:9,title:'Bir kaplan geçidi koruyor!',task:'Doğru cevaplarla kaplanı sakinleştir, güvenle geç.',name:'KAPLAN GEÇİDİ'},
+{key:'tiger',count:9,title:'Bir aslan geçidi koruyor!',task:'Doğru cevaplarla aslanı sakinleştir, güvenle geç.',name:'ASLAN GEÇİDİ'},
 {key:'snake',count:9,title:'Yılanlar yolu kapatıyor!',task:'Her kelimeyle yılanları yoldan uzaklaştır.',name:'YILAN TÜNELİ'},
 {key:'spider',count:9,title:'Örümcek ağına dikkat!',task:'Kelimeleri çöz, örümcekleri uzaklaştır ve geçidi aç.',name:'ÖRÜMCEK SALONU'},
 {key:'caveRocks',count:9,title:'Son geçit taşlarla kapanmış!',task:'Her doğru cevapla bir LEGO taşı kaldır. Hazine ileride!',name:'GİZLİ HAZİNE GEÇİDİ'}];
