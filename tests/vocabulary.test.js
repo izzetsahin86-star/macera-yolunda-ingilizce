@@ -1,0 +1,5 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {vocabulary,accepts,shuffle} from '../vocabulary.js';
+test('PDF contains all 45 unique expressions',()=>{assert.equal(vocabulary.length,45);assert.equal(new Set(vocabulary.map(w=>w.en)).size,45);});
+test('Every PDF translation and alternate meaning is accepted',()=>{for(const w of vocabulary){assert.ok(accepts(w.tr,w,2));for(const a of w.tr.split('/'))assert.ok(accepts(a,w,2));assert.ok(accepts(w.en,w,3));assert.ok(accepts(w.en.replace(/^(a|an) /,''),w,3));assert.equal(accepts('',w,2),false);assert.equal(accepts('wrong answer',w,3),false);}});
+test('Accent, case and hyphen variations work',()=>{assert.ok(accepts('SIRT CANTASI',vocabulary[20],2));assert.ok(accepts('mountain bike',vocabulary[30],3));});
+test('Shuffle includes every word exactly once without altering source',()=>{const ids=vocabulary.map(w=>w.id);assert.deepEqual(shuffle(vocabulary).map(w=>w.id).sort((a,b)=>a-b),ids);assert.deepEqual(vocabulary.map(w=>w.id),ids);});

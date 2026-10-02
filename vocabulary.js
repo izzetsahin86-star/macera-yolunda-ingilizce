@@ -1,0 +1,10 @@
+export const vocabulary = [
+['a banner','afiş / pankart'],['a contest','yarışma'],['a debate','tartışma / münazara'],['a playing field','oyun alanı / saha'],['a workshop','atölye çalışması'],['a prize giving','ödül töreni'],['a procession','geçit töreni / kortej'],['a register','kayıt defteri / sicil'],['a sponsor','sponsor / destekçi'],['a torchlight','meşale ışığı'],['disappointment','hayal kırıklığı'],['academic freedom','akademik özgürlük'],['approval','onay / tasvip'],['curious','meraklı'],['an applicant','başvuru sahibi / aday'],['exhausting','yorucu / tüketici'],['fascinated','büyülenmiş'],['joy','neşe / sevinç'],['pride','gurur / onur'],['breathtaking','nefes kesici'],['a backpack','sırt çantası'],['a billboard','ilan panosu'],['a boarding card','biniş kartı'],['a bus lane','otobüs şeridi'],['a crossroads','kavşak / dörtyol'],['a cruise','gemi seyahati'],['a deck','güverte'],['a desk clerk','resepsiyonist'],['a fare','bilet ücreti'],['a lounge','bekleme salonu'],['a mountain-bike','dağ bisikleti'],['a pavement','kaldırım'],['a rail','ray / demiryolu'],['a resort','tatil köyü'],['a room service','oda servisi'],['a rowing boat','sandal'],['a sunscreen','güneş kremi'],['a terminal','terminal'],['hillwalking','dağ yürüyüşü'],['a travel agency','seyahat acentesi'],['a travel agent','seyahat danışmanı'],['an e-ticket','elektronik bilet'],['an amusement park','lunapark'],['an inspector','bilet kontrolörü'],['educational trips','eğitim gezileri']
+].map(([en,tr],id)=>({id,en,tr}));
+export const normalize = s => s.trim().toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ı/g,'i').replace(/[-‐‑–—]/g,' ').replace(/[.,!?']/g,'').replace(/\s+/g,' ');
+export function accepts(value,word,mode){
+ const n=normalize(value); if(!n)return false;
+ const answers=mode===3?[word.en,word.en.replace(/^(a|an) /,'')]:[word.tr,...word.tr.split('/').map(s=>s.trim())];
+ return answers.some(a=>normalize(a)===n);
+}
+export function shuffle(items){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
